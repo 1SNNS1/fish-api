@@ -1,6 +1,6 @@
 package com.fish.fishbackend.model.vo;
 
-import com.fishapi.project.model.entity.Post;
+import com.fish.fishbackend.model.entity.Post;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

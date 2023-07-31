@@ -1,7 +1,7 @@
 package com.fish.fishbackend.service.impl.inner;
 
 import com.fish.fishcommon.service.InnerUserInterfaceInfoService;
-import com.fishapi.project.service.UserInterfaceInfoService;
+import com.fish.fishbackend.service.UserInterfaceInfoService;
 import org.apache.dubbo.config.annotation.DubboService;
 
 import javax.annotation.Resource;

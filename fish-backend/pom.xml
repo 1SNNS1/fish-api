@@ -14,6 +14,12 @@
             <groupId>com.fish</groupId>
             <artifactId>fish-common</artifactId>
             <version>0.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fish</groupId>
+                    <artifactId>fish-client-sdk</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.fish</groupId>

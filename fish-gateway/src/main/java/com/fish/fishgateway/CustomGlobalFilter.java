@@ -1,11 +1,11 @@
 package com.fish.fishgateway;
 
+import com.fish.fishclientsdk.utils.SignUtils;
 import com.fish.fishcommon.model.entity.InterfaceInfo;
 import com.fish.fishcommon.model.entity.User;
 import com.fish.fishcommon.service.InnerInterfaceInfoService;
 import com.fish.fishcommon.service.InnerUserInterfaceInfoService;
 import com.fish.fishcommon.service.InnerUserService;
-import com.fish.fishcommon.utils.SignUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.reactivestreams.Publisher;

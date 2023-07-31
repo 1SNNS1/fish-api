@@ -1,2 +1,2 @@
 # springboot starter
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.fish.fishclientsdk.FishApiClientConfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.fish.fishclientsdk.FishClientConfig

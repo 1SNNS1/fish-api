@@ -20,7 +20,6 @@
     <modules>
         <module>fish-backend</module>
         <module>fish-common</module>
-        <module>fish-client-sdk</module>
         <module>fish-gateway</module>
     </modules>
 

@@ -3,9 +3,9 @@ package com.fish.fishbackend.service.impl.inner;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fish.fishcommon.model.entity.InterfaceInfo;
 import com.fish.fishcommon.service.InnerInterfaceInfoService;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.exception.BusinessException;
-import com.fishapi.project.mapper.InterfaceInfoMapper;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.exception.BusinessException;
+import com.fish.fishbackend.mapper.InterfaceInfoMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.dubbo.config.annotation.DubboService;
 

@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.fishapi.project.mapper.PostMapper">
+<mapper namespace="com.fish.fishbackend.mapper.PostMapper">
 
-    <resultMap id="BaseResultMap" type="com.fishapi.project.model.entity.Post">
+    <resultMap id="BaseResultMap" type="com.fish.fishbackend.model.entity.Post">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="age" column="age" jdbcType="INTEGER"/>
             <result property="gender" column="gender" jdbcType="TINYINT"/>

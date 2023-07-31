@@ -7,10 +7,11 @@ import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONUtil;
 import com.fish.fishclientsdk.model.User;
-import com.fish.fishcommon.utils.SignUtils;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.fish.fishclientsdk.utils.SignUtils.genSign;
 
 
 public class FishApiClient {
@@ -51,7 +52,7 @@ public class FishApiClient {
         hashMap.put("nonce", RandomUtil.randomNumbers(4));
         hashMap.put("body", body);
         hashMap.put("timestamp", String.valueOf(System.currentTimeMillis() / 1000));
-        hashMap.put("sign", SignUtils.genSign(body, secretKey));
+        hashMap.put("sign", genSign(body, secretKey));
         return hashMap;
     }
 
