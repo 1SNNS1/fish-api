@@ -1,4 +1,4 @@
-package com.fish.fishclientsdk.utils;
+package com.fish.fishcommon.utils;
 
 import cn.hutool.crypto.digest.DigestAlgorithm;
 import cn.hutool.crypto.digest.Digester;

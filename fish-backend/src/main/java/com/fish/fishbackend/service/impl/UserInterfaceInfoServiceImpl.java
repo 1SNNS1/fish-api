@@ -3,10 +3,10 @@ package com.fish.fishbackend.service.impl;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fish.fishcommon.model.entity.UserInterfaceInfo;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.exception.BusinessException;
-import com.fishapi.project.mapper.UserInterfaceInfoMapper;
-import com.fishapi.project.service.UserInterfaceInfoService;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.exception.BusinessException;
+import com.fish.fishbackend.mapper.UserInterfaceInfoMapper;
+import com.fish.fishbackend.service.UserInterfaceInfoService;
 import org.springframework.stereotype.Service;
 
 /**

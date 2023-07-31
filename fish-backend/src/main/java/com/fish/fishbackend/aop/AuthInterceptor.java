@@ -1,11 +1,12 @@
 package com.fish.fishbackend.aop;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
+import com.fish.fishbackend.annotation.AuthCheck;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.exception.BusinessException;
+import com.fish.fishbackend.service.UserService;
 import com.fish.fishcommon.model.entity.User;
-import com.fishapi.project.annotation.AuthCheck;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.exception.BusinessException;
-import com.fishapi.project.service.UserService;
+
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

@@ -1,6 +1,7 @@
 package com.fish.fishbackend.exception;
 
-import com.fishapi.project.common.ErrorCode;
+
+import com.fish.fishbackend.common.ErrorCode;
 
 /**
  * 自定义异常类

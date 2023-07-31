@@ -1,8 +1,8 @@
 package com.fish.fishbackend.exception;
 
-import com.fishapi.project.common.BaseResponse;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.common.ResultUtils;
+import com.fish.fishbackend.common.BaseResponse;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.common.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

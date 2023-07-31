@@ -5,10 +5,10 @@ import cn.hutool.crypto.digest.DigestUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fish.fishcommon.model.entity.User;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.exception.BusinessException;
-import com.fishapi.project.mapper.UserMapper;
-import com.fishapi.project.service.UserService;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.exception.BusinessException;
+import com.fish.fishbackend.mapper.UserMapper;
+import com.fish.fishbackend.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
@@ -17,8 +17,8 @@ import org.springframework.util.DigestUtils;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
-import static com.fishapi.project.constant.UserConstant.ADMIN_ROLE;
-import static com.fishapi.project.constant.UserConstant.USER_LOGIN_STATE;
+import static com.fish.fishbackend.constant.UserConstant.ADMIN_ROLE;
+import static com.fish.fishbackend.constant.UserConstant.USER_LOGIN_STATE;
 
 
 /**

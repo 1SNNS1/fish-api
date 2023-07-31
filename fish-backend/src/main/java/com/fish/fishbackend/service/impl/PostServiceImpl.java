@@ -1,13 +1,13 @@
 package com.fish.fishbackend.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.exception.BusinessException;
-import com.fishapi.project.mapper.PostMapper;
-import com.fishapi.project.model.entity.Post;
-import com.fishapi.project.model.enums.PostGenderEnum;
-import com.fishapi.project.model.enums.PostReviewStatusEnum;
-import com.fishapi.project.service.PostService;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.exception.BusinessException;
+import com.fish.fishbackend.mapper.PostMapper;
+import com.fish.fishbackend.model.entity.Post;
+import com.fish.fishbackend.model.enums.PostGenderEnum;
+import com.fish.fishbackend.model.enums.PostReviewStatusEnum;
+import com.fish.fishbackend.service.PostService;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;

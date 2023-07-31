@@ -2,7 +2,7 @@ package com.fish.fishbackend.model.dto.interfaceinfo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.fishapi.project.common.PageRequest;
+import com.fish.fishbackend.common.PageRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

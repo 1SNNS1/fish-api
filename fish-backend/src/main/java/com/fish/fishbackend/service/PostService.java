@@ -1,7 +1,7 @@
 package com.fish.fishbackend.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fishapi.project.model.entity.Post;
+import com.fish.fishbackend.model.entity.Post;
 
 /**
  * @author fishapili

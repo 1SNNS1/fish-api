@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  * @author fishapi
  */
 @Configuration
-@MapperScan("com.fishapi.project.mapper")
+@MapperScan("com.fish.fishbackend.mapper")
 public class MyBatisPlusConfig {
 
     /**

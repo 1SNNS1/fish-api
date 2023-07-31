@@ -15,6 +15,16 @@
             <groupId>com.fish</groupId>
             <artifactId>fish-common</artifactId>
             <version>0.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.dubbo</groupId>
+                    <artifactId>dubbo-spring-boot-starter</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.dubbo</groupId>
+                    <artifactId>dubbo-dependencies-zookeeper-curator5</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

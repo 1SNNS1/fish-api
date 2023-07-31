@@ -2,10 +2,10 @@ package com.fish.fishbackend.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fish.fishcommon.model.entity.InterfaceInfo;
-import com.fishapi.project.common.ErrorCode;
-import com.fishapi.project.exception.BusinessException;
-import com.fishapi.project.mapper.InterfaceInfoMapper;
-import com.fishapi.project.service.InterfaceInfoService;
+import com.fish.fishbackend.common.ErrorCode;
+import com.fish.fishbackend.exception.BusinessException;
+import com.fish.fishbackend.mapper.InterfaceInfoMapper;
+import com.fish.fishbackend.service.InterfaceInfoService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 

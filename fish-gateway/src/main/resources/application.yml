@@ -1,0 +1,51 @@
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: add_request_header_route
+#          uri: http://localhost:8081
+#          predicates:
+#            - Path=/api/name/getName/**
+#          filters:
+#            - AddRequestHeader=fish, hello
+#            - AddRequestParameter=name, fish
+#            - name: CircuitBreaker
+#              args:
+#                name: myCircuitBreaker
+#                fallbackUri: forward:/fish-fallback
+#        - id: fish-fallback
+#          uri: http://localhost:8081
+#          predicates:
+#            - Path=/api/name/postName/**
+#      default-filters:
+#        - AddResponseHeader=source, fish
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: add_route
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/**
+      default-filters:
+        - AddResponseHeader=source, fish
+server:
+  port: 8090
+dubbo:
+  application:
+    name: dubbo-springboot-demo-consumer
+    qos-enable: true
+    qos-port: 33333
+    qos-accept-foreign-ip: false
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://${zookeeper.address:127.0.0.1}:2181

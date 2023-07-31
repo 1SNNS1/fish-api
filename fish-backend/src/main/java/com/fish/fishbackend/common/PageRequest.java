@@ -1,6 +1,7 @@
 package com.fish.fishbackend.common;
 
-import com.fishapi.project.constant.CommonConstant;
+
+import com.fish.fishbackend.constant.CommonConstant;
 import lombok.Data;
 
 /**
