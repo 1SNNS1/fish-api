@@ -21,6 +21,7 @@
         <module>fish-backend</module>
         <module>fish-common</module>
         <module>fish-gateway</module>
+        <module>fish-interface</module>
     </modules>
 
     <properties>
