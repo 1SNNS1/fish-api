@@ -68,4 +68,17 @@ public class FishApiClient {
         System.out.println(result);
         return result;
     }
+
+    public String getCodeGet(String msg) {
+        String json = JSONUtil.toJsonStr(msg);
+        // todo 这里body传中文乱码
+        HttpResponse httpResponse = HttpRequest.post(GATEWAY_HOST + "/api/name/getCode")
+                .addHeaders(getHeaderMap(json))
+                .body(json)
+                .execute();
+        System.out.println(httpResponse.getStatus());
+        String result = httpResponse.body();
+        System.out.println(result);
+        return result;
+    }
 }

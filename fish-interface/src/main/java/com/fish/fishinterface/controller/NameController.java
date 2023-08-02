@@ -1,9 +1,14 @@
 package com.fish.fishinterface.controller;
 
+import cn.hutool.extra.qrcode.QrCodeUtil;
 import com.fish.fishclientsdk.model.User;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * 名称 API
@@ -47,8 +52,16 @@ public class NameController {
         }*/
         String result = "POST 用户名是" + user.getUsername();
         //  调用成功后 次数+1
-
         return result;
+    }
+
+    @GetMapping("/getCode")
+    public void getCodeGet(String msg, HttpServletResponse response) throws IOException {
+        //生成二维码到输出流
+        response.setContentType("image/jpeg");
+        ServletOutputStream out = response.getOutputStream();
+        QrCodeUtil.generate(msg, 300, 300, "jpg", out);
+        out.close();
     }
 
 }
